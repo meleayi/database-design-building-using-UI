@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Repository Description (For GitHub/GitLab/Bitbucket)
 
-## Getting Started
+## Title: Database Schema Builder & SQL Generator
 
-First, run the development server:
+Short Description:
+A Next.js web app that visually designs database schemas (tables, columns, relationships) and auto-generates SQL scripts for deployment. Supports SQL Server, PostgreSQL, and MySQL(default for SQL Server).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Database Schema Builder
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A Next.js application for visually designing database schemas and generating SQL deployment scripts.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![alt text](image.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+![alt text](image-1.png)
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Visual Table Designer**: Create tables with columns, primary keys, and constraints.
+- **Foreign Key Relationships**: Define relationships between tables.
+- **SQL Script Generation**: Auto-generates SQL for:
+  - SQL Server
+  - PostgreSQL
+  - MySQL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Frontend**: Next.js (React), TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Database**: SQL Server (default, configurable)
+- **Validation**: Zod
 
-## Deploy on Vercel
+## 🚀 Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js v18+
+- SQL Server (or Docker for local testing)
+
+### Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/meleayi/database-design-building-using-UI.git
+   Install dependencies:
+   ```
+
+Copy -**npm install**
+Configure your database in src/lib/config.ts:
+
+**Copy**
+export const dbConfig = {
+server: "your-server-name",
+user: "your-username",
+password: "your-password",
+port:1433// change based on you SQL Server Configration
+database: "master", // Default connection database
+options: { encrypt: true, trustServerCertificate: true }
+};
+
+**Run the app:**
+\*\*npm run dev
+
+Let me know if you'd like to emphasize any specific feature (e.g., PostgreSQL support) or add a
