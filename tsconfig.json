@@ -13,6 +13,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    // Add these for better deployment handling:
+    "noUnusedLocals": false, // Disable to avoid unused var errors
+    "noUnusedParameters": false,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+
     "plugins": [
       {
         "name": "next"
