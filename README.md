@@ -44,7 +44,8 @@ A Next.js application for visually designing database schemas and generating SQL
    Install dependencies:
  
 2. install dependancy
-     ``` git install 
+     ``` 
+git install 
       ```
 
 **Copy**
