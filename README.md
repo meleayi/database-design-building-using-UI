@@ -40,13 +40,16 @@ A Next.js application for visually designing database schemas and generating SQL
 1. Clone the repo:
    ```bash
    git clone https://github.com/meleayi/database-design-building-using-UI.git
+     ```
    Install dependencies:
-   ```
-
-Copy -**npm install**
-Configure your database in src/lib/config.ts:
+ 
+2. install dependancy
+     ``` git install 
+      ```
 
 **Copy**
+
+  ```
 export const dbConfig = {
 server: "your-server-name",
 user: "your-username",
@@ -55,8 +58,12 @@ port:1433// change based on you SQL Server Configration
 database: "master", // Default connection database
 options: { encrypt: true, trustServerCertificate: true }
 };
-
+  ```
 **Run the app:**
-\*\*npm run dev
+
+  ```
+npm run dev
+
+  ```
 
 Let me know if you'd like to emphasize any specific feature (e.g., PostgreSQL support) or add a
