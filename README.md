@@ -9,9 +9,8 @@ A Next.js web app that visually designs database schemas (tables, columns, relat
 
 A Next.js application for visually designing database schemas and generating SQL deployment scripts.
 
-![alt text](image.png)
-
-![alt text](image-1.png)
+![alt text](public/demo1.png)
+![alt text](public/demo2.png)
 
 ## Features
 
